@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+// https://github.com/GarryLed/Winter-Exam-2025  
+
 namespace Q1
 {
     /// <summary>
