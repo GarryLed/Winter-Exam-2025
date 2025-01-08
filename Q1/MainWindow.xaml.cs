@@ -22,7 +22,7 @@ namespace Q1
 
         // Lists to store event objects 
         private List<Event> events = new List<Event>();
-        //private List<Ticket> tickets = new List<Ticket>();
+        private List<Ticket> tickets = new List<Ticket>();
         public MainWindow()
         {
             InitializeComponent();
@@ -42,7 +42,11 @@ namespace Q1
             // create ticket objects and add to tickets list 
             Ticket ticket1 = new Ticket("Early Bird",100m,100);
             Ticket ticket2 = new Ticket("Platinium", 150m, 100);
-            
+            tickets.Add(ticket1);
+            tickets.Add(ticket2);
+
+
+           
             
 
             
@@ -61,10 +65,18 @@ namespace Q1
             // when an event is selected display in the tickets list box  
             if (lbxEvents.SelectedItem is Event selectecdEvent)
             {
-                //lbxTickets.ItemsSource = selectecdEvent.Name;
+                lbxTickets.ItemsSource = selectecdEvent.Tickets;
 
                 // display ticket info here 
+
+
             }
+        }
+
+        // book a ticket when 
+        private void btnBook_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

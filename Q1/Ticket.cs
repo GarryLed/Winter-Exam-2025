@@ -24,6 +24,11 @@ namespace Q1
 
         // methods 
 
+        public override string ToString()
+        {
+            return $"{Name} - {Price} {AvailableTickets}";
+        }
+
 
     }
 }

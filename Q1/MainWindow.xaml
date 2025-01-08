@@ -9,7 +9,7 @@
     <Grid>
         <ListBox x:Name="lbxEvents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="56,101,476,108" SelectionChanged="lbxEvents_SelectionChanged"/>
         <ListBox x:Name="lbxTickets" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="372,100,99,108"/>
-        <Button x:Name="btnBook" Content="Book" HorizontalAlignment="Left" Margin="661,362,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnBook" Content="Book" HorizontalAlignment="Left" Margin="661,362,0,0" VerticalAlignment="Top" Click="btnBook_Click"/>
         <Label Content="Events" HorizontalAlignment="Left" Margin="56,54,0,0" VerticalAlignment="Top"/>
         <Label Content="Tickets" HorizontalAlignment="Left" Margin="400,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.2,0.765"/>
         <Label Content="Number of Tickets" HorizontalAlignment="Left" Margin="372,357,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.2,0.765"/>
