@@ -39,7 +39,7 @@ namespace Q1
             events.Add(event1);
             events.Add(event2);
 
-           
+            events.Sort();
 
             lbxEvents.ItemsSource = events;
 
@@ -73,7 +73,7 @@ namespace Q1
             // when an event is selected display in the tickets list box  
             if (lbxEvents.SelectedItem is Event selectecdEvent)
             {
-                //lbxTickets.ItemsSource = selectecdEvent.Tickets;
+                lbxTickets.ItemsSource = selectecdEvent.Tickets;
 
                 // display ticket info here 
 
