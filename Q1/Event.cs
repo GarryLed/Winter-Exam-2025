@@ -19,8 +19,8 @@ namespace Q1
         public List<Ticket> Tickets { get; set; } = new List<Ticket>();
 
         // constructors 
-       /*
-        * public Event (string name, DateTime dateTime, TypeOfEvent eventtype) 
+       
+         public Event (string name, DateTime dateTime, TypeOfEvent eventtype) 
      {
             Name = name;
             EventDate = dateTime;
@@ -28,7 +28,7 @@ namespace Q1
             Tickets = new List<Ticket> ();
         }
         
-        */
+        
         // methods 
         // compare to method that is used to compare Event objects (using EventDate)
         public int CompareTo(Event other)
